@@ -1,11 +1,13 @@
-Summary:	Library implementing HOME-ETC mechanism for per-user configuration and data files.
-Summary(pl):	Biblioteka implementuj±ca mechanizm HOME-ETC do indywidualnych plików konfiguracyjnych i plików z zasobami.
+Summary:	Library implementing HOME-ETC mechanism for per-user configuration and data files
+Summary(pl):	Biblioteka implementuj±ca mechanizm HOME-ETC do indywidualnych plików konfiguracyjnych i plików z zasobami
 Name:		confdir
 Version:	0.0.1
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	ftp://student.ifpan.edu.pl/pub/confdir/%{name}-%{version}.tar
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -62,15 +64,12 @@ Przyk³adowe programy u¿ywaj±ce biblioteki confdir.
 
 %build
 aclocal
-autoconf
-automake -a
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
-gzip doc/* README AUTHORS
-
 %install
-
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -87,14 +86,14 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/*.so.*.*
-%doc *.gz
+%doc README AUTHORS
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/*.so
 %attr(755,root,root) %{_libdir}/*.la
 %{_includedir}/*
-%doc doc/*.gz
+%doc doc/*
 
 %files static
 %defattr(644,root,root,755)
