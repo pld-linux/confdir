@@ -63,7 +63,8 @@ Przyk³adowe programy u¿ywaj±ce biblioteki confdir.
 %setup -q
 
 %build
-aclocal
+rm -f missing
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
@@ -71,13 +72,14 @@ aclocal
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install examples/*.c $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%post -p /sbin/ldconfig
+%post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
 %clean
@@ -85,15 +87,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/*.so.*.*
 %doc README AUTHORS
+%attr(755,root,root) %{_libdir}/*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
+%doc doc/*
 %attr(755,root,root) %{_libdir}/*.so
 %attr(755,root,root) %{_libdir}/*.la
 %{_includedir}/*
-%doc doc/*
 
 %files static
 %defattr(644,root,root,755)
