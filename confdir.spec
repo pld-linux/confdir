@@ -5,17 +5,22 @@ Version:	0.0.1
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	ftp://student.ifpan.edu.pl/pub/confdir/confdir-%{version}.tar
+Source0:	ftp://student.ifpan.edu.pl/pub/confdir/%{name}-%{version}.tar
 BuildRequires:	libtool
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Confdir is a library implementing HOME-ETC mechanism for per-user configuration
-and data files, as described by Pawe³ Wilk in
-cvs://cvs.pld.org.pl/PLD-doc/home-etc/HOME-ETC.txt. Confdir was inspired by his userdir library, but has additional features.
+Confdir is a library implementing HOME-ETC mechanism for per-user
+configuration and data files, as described by Pawe³ Wilk in
+cvs://cvs.pld.org.pl/PLD-doc/home-etc/HOME-ETC.txt. Confdir was
+inspired by his userdir library, but has additional features.
 
 %description -l pl
-Confdir jest bibliotek± implementuj±c± mechanizm HOME-ETC do indywidualnych plików konfiguracyjnych i plików z zasobami, tak jak zosta³ on opisany przez Paw³a Wilka w dokumencie cvs://cvs.pld.org.pl/PLD-doc/home-etc/HOME-ETC.txt. Confdir by³a inspirowana jego bibliotek± userdir, ale ma dodatkowe mo¿liwo¶ci.
+Confdir jest bibliotek± implementuj±c± mechanizm HOME-ETC do
+indywidualnych plików konfiguracyjnych i plików z zasobami, tak jak
+zosta³ on opisany przez Paw³a Wilka w dokumencie
+cvs://cvs.pld.org.pl/PLD-doc/home-etc/HOME-ETC.txt. Confdir by³a
+inspirowana jego bibliotek± userdir, ale ma dodatkowe mo¿liwo¶ci.
 
 %package devel
 Summary:	Header files for confdir library
@@ -66,6 +71,7 @@ gzip doc/* README AUTHORS
 
 %install
 
+rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
