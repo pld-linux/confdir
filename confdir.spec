@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	ftp://student.ifpan.edu.pl/pub/confdir/%{name}-%{version}.tar
+# Source0-md5:	0943492fe88140757deeebdb42061719
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
