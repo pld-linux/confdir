@@ -5,7 +5,7 @@ Version:	0.0.1
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	ftp://student.ifpan.edu.pl/pub/confdir/confdir-%{version}.tar.gz
+Source0:	ftp://student.ifpan.edu.pl/pub/confdir/confdir-%{version}.tar
 BuildRequires:	libtool
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
