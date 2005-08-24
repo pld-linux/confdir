@@ -29,7 +29,7 @@ inspirowana jego bibliotek± userdir, ale ma dodatkowe mo¿liwo¶ci.
 Summary:	Header files for confdir library
 Summary(pl):	Pliki nag³ówkowe biblioteki confdir
 Group:		Development/Libraries
-Requires:	confdir = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for confdir library.
@@ -41,7 +41,7 @@ Pliki nag³ówkowe biblioteki confdir.
 Summary:	Static confdir library
 Summary(pl):	Biblioteka statyczna confdir
 Group:		Development/Libraries
-Requires:	confdir = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description static
 Static confdir library.
