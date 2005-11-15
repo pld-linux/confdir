@@ -65,6 +65,7 @@ Przyk³adowe programy u¿ywaj±ce biblioteki confdir.
 
 %build
 rm -f missing
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
