@@ -64,7 +64,6 @@ Przyk³adowe programy u¿ywaj±ce biblioteki confdir.
 %setup -q
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
