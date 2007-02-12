@@ -1,5 +1,5 @@
 Summary:	Library implementing HOME-ETC mechanism for per-user configuration and data files
-Summary(pl):	Biblioteka implementuj±ca mechanizm HOME-ETC do indywidualnych plikÛw konfiguracyjnych i plikÛw z zasobami
+Summary(pl.UTF-8):   Biblioteka implementujƒÖca mechanizm HOME-ETC do indywidualnych plik√≥w konfiguracyjnych i plik√≥w z zasobami
 Name:		confdir
 Version:	0.0.1
 Release:	1
@@ -14,51 +14,51 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Confdir is a library implementing HOME-ETC mechanism for per-user
-configuration and data files, as described by Pawe≥ Wilk in
+configuration and data files, as described by Pawe≈Ç Wilk in
 cvs://cvs.pld-linux.org/PLD-doc/home-etc/HOME-ETC.txt. Confdir was
 inspired by his userdir library, but has additional features.
 
-%description -l pl
-Confdir jest bibliotek± implementuj±c± mechanizm HOME-ETC do
-indywidualnych plikÛw konfiguracyjnych i plikÛw z zasobami, tak jak
-zosta≥ on opisany przez Paw≥a Wilka w dokumencie
-cvs://cvs.pld-linux.org/PLD-doc/home-etc/HOME-ETC.txt. Confdir by≥a
-inspirowana jego bibliotek± userdir, ale ma dodatkowe moøliwo∂ci.
+%description -l pl.UTF-8
+Confdir jest bibliotekƒÖ implementujƒÖcƒÖ mechanizm HOME-ETC do
+indywidualnych plik√≥w konfiguracyjnych i plik√≥w z zasobami, tak jak
+zosta≈Ç on opisany przez Paw≈Ça Wilka w dokumencie
+cvs://cvs.pld-linux.org/PLD-doc/home-etc/HOME-ETC.txt. Confdir by≈Ça
+inspirowana jego bibliotekƒÖ userdir, ale ma dodatkowe mo≈ºliwo≈õci.
 
 %package devel
 Summary:	Header files for confdir library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki confdir
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki confdir
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for confdir library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki confdir.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki confdir.
 
 %package static
 Summary:	Static confdir library
-Summary(pl):	Biblioteka statyczna confdir
+Summary(pl.UTF-8):   Biblioteka statyczna confdir
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description static
 Static confdir library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna confdir.
 
 %package examples
 Summary:	Demonstration programs using confdir library
-Summary(pl):	Przyk≥adowe programy uøywaj±ce biblioteki confdir
+Summary(pl.UTF-8):   Przyk≈Çadowe programy u≈ºywajƒÖce biblioteki confdir
 Group:		Development/Libraries
 
 %description examples
 Demonstration programs using confdir library.
 
-%description examples -l pl
-Przyk≥adowe programy uøywaj±ce biblioteki confdir.
+%description examples -l pl.UTF-8
+Przyk≈Çadowe programy u≈ºywajƒÖce biblioteki confdir.
 
 %prep
 %setup -q
