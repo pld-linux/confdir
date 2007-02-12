@@ -1,5 +1,5 @@
 Summary:	Library implementing HOME-ETC mechanism for per-user configuration and data files
-Summary(pl.UTF-8):   Biblioteka implementująca mechanizm HOME-ETC do indywidualnych plików konfiguracyjnych i plików z zasobami
+Summary(pl.UTF-8):	Biblioteka implementująca mechanizm HOME-ETC do indywidualnych plików konfiguracyjnych i plików z zasobami
 Name:		confdir
 Version:	0.0.1
 Release:	1
@@ -33,7 +33,7 @@ inspirowana jego biblioteką userdir, ale ma dodatkowe możliwości.
 
 %package devel
 Summary:	Header files for confdir library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki confdir
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki confdir
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -45,7 +45,7 @@ Pliki nagłówkowe biblioteki confdir.
 
 %package static
 Summary:	Static confdir library
-Summary(pl.UTF-8):   Biblioteka statyczna confdir
+Summary(pl.UTF-8):	Biblioteka statyczna confdir
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -57,7 +57,7 @@ Biblioteka statyczna confdir.
 
 %package examples
 Summary:	Demonstration programs using confdir library
-Summary(pl.UTF-8):   Przykładowe programy używające biblioteki confdir
+Summary(pl.UTF-8):	Przykładowe programy używające biblioteki confdir
 Group:		Development/Libraries
 
 %description examples
