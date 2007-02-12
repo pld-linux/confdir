@@ -14,6 +14,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Confdir is a library implementing HOME-ETC mechanism for per-user
+configuration and data files, as described by Pawel Wilk in
+cvs://cvs.pld-linux.org/PLD-doc/home-etc/HOME-ETC.txt. Confdir was
+inspired by his userdir library, but has additional features.
+
+%description -l en.UTF-8
+Confdir is a library implementing HOME-ETC mechanism for per-user
 configuration and data files, as described by Paweł Wilk in
 cvs://cvs.pld-linux.org/PLD-doc/home-etc/HOME-ETC.txt. Confdir was
 inspired by his userdir library, but has additional features.
